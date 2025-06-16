@@ -6,10 +6,10 @@ Les modèles de langage de type GPT (Generative Pretrained Transformers) sont ca
 
 Ce projet couvre les étapes suivantes :
 
-1-Lecture et encodage d’un texte
-2-Préparation des batchs avec DataLoader
-3-Définition d’un mini-modèle GPT
-4-Entraînement
+1- Lecture et encodage d’un texte
+2- Préparation des batchs avec DataLoader
+3- Définition d’un mini-modèle GPT
+4- Entraînement
 
 5-Génération de texte avec sampling contrôlé (temperature, top-k, top-p)
 
@@ -150,7 +150,7 @@ Avec un entraînement de quelques centaines d’itérations, le modèle peut dé
 
 Ce mini-GPT montre qu’il est possible de générer du texte avec un modèle très simple, sans transformer complet ni multi-têtes. Il est parfait pour l'apprentissage des fondamentaux du machine learning sur du texte. On peut ensuite enrichir :
 
--En ajoutant des blocs de transformer
--En entraînant sur des mots ou des tokens (niveau BPE)
--En sauvegardant les checkpoints
--En déployant une interface Web (Streamlit, Gradio...)
+- En ajoutant des blocs de transformer
+- En entraînant sur des mots ou des tokens (niveau BPE)
+- En sauvegardant les checkpoints
+- En déployant une interface Web (Streamlit, Gradio...)
