@@ -6,10 +6,10 @@ Les modèles de langage de type GPT (Generative Pretrained Transformers) sont ca
 
 Ce projet couvre les étapes suivantes :
 
-1- Lecture et encodage d’un texte
-2- Préparation des batchs avec DataLoader
-3- Définition d’un mini-modèle GPT
-4- Entraînement
+1. Lecture et encodage d’un texte
+2. Préparation des batchs avec DataLoader
+3. Définition d’un mini-modèle GPT
+4. Entraînement
 
 5-Génération de texte avec sampling contrôlé (temperature, top-k, top-p)
 
