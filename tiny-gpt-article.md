@@ -33,7 +33,8 @@ data = torch.tensor([stoi[c] for c in text], dtype=torch.long)
 
 Plutôt que de coder manuellement la génération des batchs, on utilise les outils standard de PyTorch :
 
-```class CharDataset(torch.utils.data.Dataset):
+```
+class CharDataset(torch.utils.data.Dataset):
     def __init__(self, data, block_size):
         self.data = data
         self.block_size = block_size
