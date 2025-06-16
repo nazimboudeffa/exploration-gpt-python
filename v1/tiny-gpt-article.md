@@ -33,7 +33,9 @@ data = torch.tensor([stoi[c] for c in text], dtype=torch.long)
 
 Plutôt que de coder manuellement la génération des batchs, on utilise les outils standard de PyTorch :
 
-```class CharDataset(torch.utils.data.Dataset):
+```
+
+class CharDataset(torch.utils.data.Dataset):
     def __init__(self, data, block_size):
         self.data = data
         self.block_size = block_size
@@ -47,7 +49,9 @@ Plutôt que de coder manuellement la génération des batchs, on utilise les out
         return x, y
 
 dataset = CharDataset(data, block_size=64)
-dataloader = torch.utils.data.DataLoader(dataset, batch_size=4, shuffle=True)```
+dataloader = torch.utils.data.DataLoader(dataset, batch_size=4, shuffle=True)
+
+```
 
 🧠 Mini GPT : un modèle simple
 
