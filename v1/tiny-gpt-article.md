@@ -7,11 +7,8 @@ Les modèles de langage de type GPT (Generative Pretrained Transformers) sont ca
 Ce projet couvre les étapes suivantes :
 
 1-Lecture et encodage d’un texte
-
 2-Préparation des batchs avec DataLoader
-
 3-Définition d’un mini-modèle GPT
-
 4-Entraînement
 
 5-Génération de texte avec sampling contrôlé (temperature, top-k, top-p)
@@ -101,11 +98,9 @@ for step in range(500):
 
 La génération de texte se fait un caractère à la fois, à partir d’un prompt. On peut contrôler la créativité avec :
 
-temperature : ajuste la "netteté" des probabilités (baisse = plus conservateur)
-
-top_k : ne considère que les k tokens les plus probables
-
-top_p : garde les tokens les plus probables jusqu’à atteindre p de probabilité cumulée
+- temperature : ajuste la "netteté" des probabilités (baisse = plus conservateur)
+- top_k : ne considère que les k tokens les plus probables
+- top_p : garde les tokens les plus probables jusqu’à atteindre p de probabilité cumulée
 
 ```
 @torch.no_grad()
@@ -156,9 +151,6 @@ Avec un entraînement de quelques centaines d’itérations, le modèle peut dé
 Ce mini-GPT montre qu’il est possible de générer du texte avec un modèle très simple, sans transformer complet ni multi-têtes. Il est parfait pour l'apprentissage des fondamentaux du machine learning sur du texte. On peut ensuite enrichir :
 
 -En ajoutant des blocs de transformer
-
 -En entraînant sur des mots ou des tokens (niveau BPE)
-
 -En sauvegardant les checkpoints
-
 -En déployant une interface Web (Streamlit, Gradio...)
