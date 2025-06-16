@@ -10,10 +10,10 @@ Ce projet couvre les étapes suivantes :
 2. Préparation des batchs avec DataLoader
 3. Définition d’un mini-modèle GPT
 4. Entraînement
-
-5-Génération de texte avec sampling contrôlé (temperature, top-k, top-p)
+5. Génération de texte avec sampling contrôlé (temperature, top-k, top-p)
 
 📝 Prétraitement du texte
+
 On commence par charger un fichier texte (exemple.txt), nettoyer le contenu, et encoder chaque caractère en entier. On crée un vocabulaire simple basé sur les caractères uniques.
 
 ```
